@@ -14,7 +14,7 @@ Un dossier de niveau contient un fichier de configuration (un fichier appelé `l
 
 Au moment où nous écrivons ces lignes, la meilleure façon de créer un nouveau niveau est de copier le dossier de niveau d'un niveau existant. Cela copiera toute la configuration de la carte et du jeu de tuiles dont vous aurez besoin pour créer efficacement un nouveau niveau. Le dossier de niveau d'exemple dans le repo de modèles (ouvrir une nouvelle fenêtre) est un bon exemple à utiliser. Il contient tous les fichiers dont vous aurez besoin pour créer un niveau. Après avoir fait cela, le dossier de votre nouveau niveau devrait ressembler à quelque chose comme ceci :
 
-``bash
+```bash
 mon_extension/
 └── niveaux/
     ├── le_niveau_que_tu_copies/

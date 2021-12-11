@@ -9,7 +9,7 @@ Pour créer votre propre copie de ce code de démarrage à héberger sur GitHub 
 
 Lorsque vous avez créé votre propre copie de ce dépôt de modèle, clonez votre nouveau dépôt dans le dossier des extensions que vous avez spécifié dans le client du jeu lorsque vous avez activé les extensions.
 
-``bash
+```bash
 cd /path/to/extensions/dossier
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
@@ -17,7 +17,7 @@ cd your-repo-name
 
 Pour créer une extension TwilioQuest, vous devez avoir installé [Node.js et npm](https://nodejs.org/en/download/). Une fois que vous avez installé Node.js, vous pouvez installer les dépendances de l'extension du modèle avec :
 
-``bash
+```bash
 npm install
 ```
 
