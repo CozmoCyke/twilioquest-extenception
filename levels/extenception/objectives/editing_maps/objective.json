@@ -1,18 +1,18 @@
 {
-  "title": "Editing Maps",
-  "description": "You'll learn how to edit maps for TwilioQuest using Tiled!",
-  "validation_fields": [
+  " title " : "Modification des cartes",
+  "description" : " Vous apprendrez à éditer des cartes pour TwilioQuest en utilisant Tiled ! ",
+  "validation_fields" : [
     {
-      "name": "answer1",
-      "type": "text",
-      "placeholder": "/path/to/tiled",
-      "label": "Provide the path where Tiled is installed"
+      " name " : "réponse1",
+      "type" : "text",
+      "placeholder" : "/path/to/tiled",
+      "label" : "Fournir le chemin d'accès où Tiled est installé"
     },
     {
-      "name": "answer2",
-      "type": "text",
-      "placeholder": "type your answer here",
-      "label": "What is the layer on which lasers, player spawn and chests are placed on in Tiled?"
+      " name " : "answer2",
+      "type" : "text",
+      "placeholder" : "tape ta réponse ici",
+      "label" : "Quelle est la couche sur laquelle les lasers, le spawn des joueurs et les coffres sont placés dans Tiled ?"
     }
   ],
   "rewards": {

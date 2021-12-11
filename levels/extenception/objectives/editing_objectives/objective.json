@@ -1,18 +1,18 @@
 {
-  "title": "Editing Objectives",
-  "description": "This is the final objective of this mission. This will teach you the basics of how you can create and edit objectives in your missions.",
-  "validation_fields": [
+  "title" : "Objectifs d'édition",
+  "description" : "Il s'agit de l'objectif final de cette mission. Vous apprendrez les bases de la façon dont vous pouvez créer et modifier les objectifs dans vos missions.",
+  "validation_fields" : [
     {
-      "name": "answer1",
-      "type": "text",
-      "placeholder": "type your answer here",
-      "label": "What is file that contains the validation code for the objective?"
+      " name " : "answer1",
+      "type" : "text",
+      "placeholder" : "tapez votre réponse ici",
+      "label" : "Quel est le fichier qui contient le code de validation de l'objectif ?"
     },
     {
-      "name": "answer2",
-      "type": "text",
-      "placeholder": "type your answer here",
-      "label": "Twilio provides an object that lets you access and set environment variables, access objective answers etc. What is it called?"
+      " name " : "answer2",
+      "type" : "text",
+      "placeholder" : "tapez votre réponse ici",
+      "label" : "Twilio fournit un objet qui vous permet d'accéder et de définir des variables d'environnement, d'accéder à des réponses objectives, etc. Quel est son nom ?"
     }
   ],
   "rewards": {

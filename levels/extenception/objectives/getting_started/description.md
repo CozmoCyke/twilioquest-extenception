@@ -1,17 +1,17 @@
-# Getting Started
+# Démarrage
 
 <div class="aside">
-<h3>To-Do List</h3>
+<h3>Liste de tâches à accomplir</h3>
 <ul>
-  <li>Use the GitHub template repository to create the extension.</li>
-  <li><em>Clone</em> the repository into your local extensions folder.</li>
+  <li>Utilisez le répertoire de modèles de GitHub pour créer l'extension.</li>
+  <li><em>Clonez</em> le dépôt dans votre dossier local d'extensions.</li>
 </ul>
 </div>
 
-Creating a new extension requires creating a new subfolder under your extensions folder that contains at least a package.json file. You could create your extension folder from scratch, but it is not recommended to do so. [Twilio has created a template repository on GitHub](https://github.com/TwilioQuest/twilioquest-extension-template) that should be used as a starting point.
+La création d'une nouvelle extension nécessite de créer un nouveau sous-dossier sous votre dossier d'extensions qui contient au moins un fichier package.json. Vous pourriez créer votre dossier d'extensions à partir de zéro, mais il n'est pas recommandé de le faire. [Twilio a créé un dépôt de modèles sur GitHub (https://github.com/TwilioQuest/twilioquest-extension-template) qui devrait être utilisé comme point de départ.
 
-## Working on your extension locally
+## Travailler sur votre extension localement
 
-When you've created your own copy of this template repo, clone your new repository into the extensions folder you specified in the game client when you enabled extensions.
+Lorsque vous avez créé votre propre copie de ce dépôt-type, clonez votre nouveau dépôt dans le dossier des extensions que vous avez spécifié dans le client du jeu lorsque vous avez activé les extensions.
 
-Creating a TwilioQuest extension will require that you have [Node.js and npm](https://nodejs.org/en/download/) installed.
+Pour créer une extension TwilioQuest, il est nécessaire que vous ayez installé [Node.js et npm] (https://nodejs.org/fr/download/).

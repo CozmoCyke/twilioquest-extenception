@@ -25,22 +25,22 @@ module.exports = async function (helper) {
 
   if (!answer1) {
     return helper.fail(`
-      Please enter the path where Tiled is installed.
+    Veuillez entrer le chemin où Tiled est installé.
     `);
   }
 
   try {
     var stats = fs.statSync(path.join(answer1, "tiled.exe"));
-    if (!stats.isFile()) throw "Not a File";
+    if (!stats.isFile()) throw "Pas de fichier";
   } catch (e) {
     return helper.fail(`
-      \`tiled.exe\` was not found at the given location.
+    \`tiled.exe\` n'a pas été trouvé à l'endroit indiqué.
     `);
   }
 
   if (!answer2) {
     return helper.fail(`
-      Please enter the answer to the second question.
+    Veuillez indiquer la réponse à la deuxième question.
     `);
   }
 
@@ -48,14 +48,14 @@ module.exports = async function (helper) {
     assert.strictEqual(answer2, "objects");
   } catch (e) {
     return helper.fail(`
-      The response to the second question is incorrect. The correct
-      answer is "obj____". 
+    La réponse à la deuxième question est incorrecte. La réponse correcte
+    est "obj____". 
     `);
   }
 
   helper.success(
     `
-      Hooray! You did it! You can now start editing maps to your liking!
+    Hourra ! Vous avez réussi ! Vous pouvez maintenant commencer à modifier les cartes à votre convenance !
     `,
   );
 };

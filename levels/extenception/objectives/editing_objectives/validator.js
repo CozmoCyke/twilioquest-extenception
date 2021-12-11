@@ -25,7 +25,7 @@ module.exports = async function (helper) {
 
   if (!answer1) {
     return helper.fail(`
-      Please enter the answer to the first question.
+    Veuillez saisir la réponse à la première question.
     `);
   }
 
@@ -33,14 +33,14 @@ module.exports = async function (helper) {
     assert.strictEqual(answer1, "validator.js");
   } catch (e) {
     return helper.fail(`
-      The response to the second question is incorrect. The correct
-      answer is "vali_____.js". 
+    La réponse à la deuxième question est incorrecte. La réponse correcte
+    est "vali_____.js". 
     `);
   }
 
   if (!answer2) {
     return helper.fail(`
-      Please enter the answer to the second question.
+    Veuillez indiquer la réponse à la deuxième question.
     `);
   }
 
@@ -48,15 +48,15 @@ module.exports = async function (helper) {
     assert.strictEqual(answer2, "helper");
   } catch (e) {
     return helper.fail(`
-      The response to the second question is incorrect. The correct
-      answer is "hel___". 
+      cLa réponse à la deuxième question est incorrecte. La réponse correcte
+      est "hel___". 
     `);
   }
 
   helper.success(
     `
-      Hooray! You did it! You've successfully created your first extension'
-      We hope you learned something useful from this extension that would inspire and help you creat your own TwilioQuest extensions. Thanks for playing.
-    `,
+    Hourra ! Vous avez réussi ! Vous avez réussi à créer votre première extension'.
+    Nous espérons que vous avez appris quelque chose d'utile de cette extension qui vous inspirera et vous aidera à créer vos propres extensions TwilioQuest. Merci de jouer.
+  `,
   );
 };

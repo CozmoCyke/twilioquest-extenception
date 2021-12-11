@@ -1,67 +1,67 @@
-# Editing Objectives
+# Modification des objectifs
 
-[TwilioQuest Extensions Docs](https://twilioquest.github.io/extension-docs/api/)
+[Docs sur les extensions de TwilioQuest] (https://twilioquest.github.io/extension-docs/api/)
 
-[TwilioQuest Extensions API Docs](https://twilioquest.github.io/extension-docs/guide/)
+[Docs API TwilioQuest Extensions] (https://twilioquest.github.io/extension-docs/guide/)
 
-Below are some examples from the TwilioQuest Extension Guide
+Voici quelques exemples tirés du guide d'extension TwilioQuest
 
 ## `objective.json`
 
 ```json
 {
-  "title": "Fog Owl: Plant a Tree!",
-  "description": "Playing TwilioQuest supports reforestation in Australia. Click <strong>HACK</strong>, and Twilio will donate a dollar to plant a tree!",
-  "validation_fields": [
+  "title" : "Fog Owl : Planter un arbre !",
+  "description" : "Le jeu TwilioQuest soutient la reforestation en Australie. Cliquez sur <strong>HACK</strong>, et Twilio fera don d'un dollar pour planter un arbre !",
+  "validation_fields" : [
     {
-      "name": "prompt",
-      "type": "prompt",
-      "placeholder": "",
-      "label": "Click HACK to plant a tree."
+      "name" : "prompt",
+      "type" : "prompt",
+      "placeholder" : "",
+      "label" : "Cliquez sur HACK pour planter un arbre".
     }
   ],
-  "show_ide": false,
-  "rewards": {
-    "xp": 100
+  "show_ide" : false,
+  " rewards " : {
+    "xp" : 100
   }
 }
 ```
 
 ## `validator.js`
 
-This is a validator that uses an asynchronous network request to check if a user entered a valid GitHub username in an objective.
+Voici un validateur qui utilise une requête réseau asynchrone pour vérifier si un utilisateur a saisi un nom d'utilisateur GitHub valide dans un objectif.
 
 ```javascript
-const got = require("got");
+const got = require("got") ;
 
 module.exports = async (helper) => {
-  const username = helper.getNormalizedInput("username", { lowerCase: false });
+  const username = helper.getNormalizedInput("username", { lowerCase : false }) ;
 
   if (!username) {
-    return helper.fail(`Please enter the username of your GitHub account!`);
+    return helper.fail(`Veuillez entrer le nom d'utilisateur de votre compte GitHub!`) ;
   }
 
   try {
-    const response = await got(`https://api.github.com/users/${username}`, {
-      throwHttpErrors: false,
-    });
+    const response = await got(`https://api.github.com/users/ ${username}`, {
+      throwHttpErrors : false,
+    }) ;
 
     if (response.statusCode === 200) {
       return helper.success(
-        `We found your GitHub user, ${username}. Good job!`,
-        [{ name: "GITHUB_USERNAME", value: username }]
-      );
+        `Nous avons trouvé votre utilisateur GitHub, ${username}. Bon travail !`,
+        [{ name : "GITHUB_USERNAME", value : username }]
+      ) ;
     } else {
       helper.fail(
-        `We couldn't find the GitHub user, ${username}. Is there a typo in the username?`
-      );
+        `Nous n'avons pas pu trouver l'utilisateur GitHub, ${username}. Y a-t-il une faute de frappe dans le nom d'utilisateur ?``
+      ) ;
     }
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate your GitHub username!
+      `Quelque chose a mal tourné lorsque nous avons essayé de valider votre nom d'utilisateur GitHub !
       
       ${err}`
-    );
+    ) ;
   }
-};
+} ;
 ```

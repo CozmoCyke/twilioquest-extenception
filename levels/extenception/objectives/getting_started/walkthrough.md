@@ -1,25 +1,25 @@
-# Getting Started
+# Démarrage
 
-Creating a new extension requires creating a new subfolder under your extensions folder that contains at least a package.json file. You could create your extension folder from scratch, but it is not recommended to do so. [Twilio has created a template repository on GitHub](https://github.com/TwilioQuest/twilioquest-extension-template) that should be used as a starting point.
+Pour créer une nouvelle extension, il faut créer un nouveau sous-dossier sous votre dossier d'extensions qui contient au moins un fichier package.json. Tu pourriez créer votre dossier d'extension à partir de zéro, mais il n'est pas recommandé de le faire. [Twilio a créé un dépôt de modèles sur GitHub](https://github.com/TwilioQuest/twilioquest-extension-template) qui devrait être utilisé comme point de départ.
 
-To create your own copy of this starter code to host on GitHub (recommended!), click the green "Use this template" button.
-![GitHub Green Button Image](https://twilioquest.github.io/extension-docs/assets/img/use_template.55838478.png)
+Pour créer votre propre copie de ce code de démarrage à héberger sur GitHub (recommandé !), cliquez sur le bouton vert "Utiliser ce modèle".
+![Image du bouton vert de GitHub](https://twilioquest.github.io/extension-docs/assets/img/use_template.55838478.png)
 
-## Working on your extension locally
+## Travailler sur votre extension localement
 
-When you've created your own copy of this template repo, clone your new repository into the extensions folder you specified in the game client when you enabled extensions.
+Lorsque vous avez créé votre propre copie de ce dépôt de modèle, clonez votre nouveau dépôt dans le dossier des extensions que vous avez spécifié dans le client du jeu lorsque vous avez activé les extensions.
 
-```bash
-cd /path/to/extensions/folder
+``bash
+cd /path/to/extensions/dossier
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 ```
 
-Creating a TwilioQuest extension will require that you have [Node.js and npm](https://nodejs.org/en/download/) installed. Once you have installed Node.js, you can install the template extension's dependencies with:
+Pour créer une extension TwilioQuest, vous devez avoir installé [Node.js et npm](https://nodejs.org/en/download/). Une fois que vous avez installé Node.js, vous pouvez installer les dépendances de l'extension du modèle avec :
 
-```bash
+``bash
 npm install
 ```
 
-After cloning your extension in the extensions folder, you should be able to see it in the `Extensions` submenu under `Settings` in the game client.
-The template extension has a simple VR training level created for you to reference and start hacking on. Interact with the VR Training computer aboard the Fog Owl to load up this sample mission!
+Après avoir cloné votre extension dans le dossier des extensions, vous devriez pouvoir la voir dans le sous-menu `Extensions` sous `Paramètres` dans le client du jeu.
+L'extension modèle a créé un niveau d'entraînement VR simple pour que vous puissiez le référencer et commencer à pirater. Interagissez avec l'ordinateur d'entraînement RV à bord du Fog Owl pour charger cet exemple de mission !

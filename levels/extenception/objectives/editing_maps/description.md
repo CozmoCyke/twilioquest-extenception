@@ -1,40 +1,40 @@
-# Editing Maps
+# Editer les cartes
 
 <div class="aside">
-<h3>To-Do List</h3>
+<h3>Liste de tâches à accomplir</h3>
 <ul>
-  <li>Install Tiled.</li>
-  <li>Make changes to the map as you like.</li>
+  <li>Installer Tiled.</li>
+  <li>Faites des modifications à la carte comme vous le souhaitez.</li>
 </ul>
 </div>
 
-The maps in TwilioQuest levels are stored in `json` but can be edited using Tiled. When opening the map in Tiled the program automatically detects the used Tileset and displays it.
+Les cartes des niveaux de TwilioQuest sont stockées en `json` mais peuvent être éditées en utilisant Tiled. En ouvrant la carte dans Tiled, le programme détecte automatiquement le Tileset utilisé et l'affiche.
 
-Using Tiled you can the map to your liking and save it. To refresh the map in TwilioQuest, return to the Fog Owl and go back to the VR Training Computer and select your mission(level). This level is an example of how different Tiles from TwilioQuest can be combined to create unique levels.
+Avec Tiled, vous pouvez modifier la carte à votre guise et la sauvegarder. Pour rafraîchir la carte dans TwilioQuest, retournez au Fog Owl et revenez à l'ordinateur d'entraînement VR et sélectionnez votre mission (niveau). Ce niveau est un exemple de la façon dont les différentes tuiles de TwilioQuest peuvent être combinées pour créer des niveaux uniques.
 
-## Installing Tiled
+## Installation de Tiled
 
-Tiled can be downloaded from https://www.mapeditor.org/
+Tiled peut être téléchargé à partir de https://www.mapeditor.org/.
 
-## Layers and Tiles
+## Couches et tuiles
 
-Tiles are the core of how you'll build the static parts of a TwilioQuest map. In Tiled, these are placed within "tile layers" using a variety of tools. These layers function similarly to layers in painting programs like Adobe Photoshop.
+Les tuiles sont au cœur de la construction des parties statiques d'une carte TwilioQuest. Dans Tiled, elles sont placées dans des "couches de tuiles" à l'aide de divers outils. Ces couches fonctionnent de manière similaire aux couches dans les programmes de peinture comme Adobe Photoshop.
 
-Layers can have a few special properties that TwilioQuest will consume to treat them differently. These properties are:
+Les couches peuvent avoir quelques propriétés spéciales que TwilioQuest utilisera pour les traiter différemment. Ces propriétés sont :
 
-* `collision` - If this is set to true, then the tiles in this layer will prevent the player from passing through them. There is usually a main `Collision` tile layer with this property.
-* `hidden` - When set to true, this tile layer will not be rendered visually to the player. The `Collision` layer should have this property set as well.
-* `useCollisionMasks` - This is a more advanced feature that will let the tiles in a tile layer use the Tiled Collision Editor to specify a custom collision box. This can be useful if tiles do not visually sit on the tile grid.
+* `collision` - Si cette propriété est définie à true, alors les tuiles de cette couche empêcheront le joueur de passer à travers elles. Il y a généralement une couche principale de tuiles `Collision` avec cette propriété.
+* `hidden` - Si elle est définie à true, cette couche de tuiles ne sera pas rendue visuellement au joueur. La couche `Collision` devrait également avoir cette propriété définie.
+* `useCollisionMasks` - Il s'agit d'une fonctionnalité plus avancée qui permet aux tuiles d'une couche de tuiles d'utiliser l'éditeur de collision de tuiles pour spécifier une zone de collision personnalisée. Cela peut être utile si les tuiles ne se situent pas visuellement sur la grille de tuiles.
 
-## Objects and Properties
+## Objets et propriétés
 
-Objects are important for accomplishing the various dynamic parts of TwilioQuest. This includes things like non player characters, laser barriers, and more!
-Objects live within a special type of layer called an "object layer". Generally, each TwilioQuest map has a single object layer where every object lives. This layer is conventionally called Objects.
-Both built-in objects and custom objects can be added to this layer. They will have properties that can be tweaked for different effects depending on the object.
-These are a few important built-in objects that essentially every map will use:
+Les objets sont importants pour réaliser les différentes parties dynamiques de TwilioQuest. Cela inclut des éléments tels que les personnages non joueurs, les barrières laser, et bien plus encore !
+Les objets se trouvent dans un type de couche spécial appelé " couche d'objets ". En général, chaque carte de TwilioQuest possède une seule couche d'objets où vivent tous les objets. Cette couche est conventionnellement appelée Objets.
+Des objets intégrés et des objets personnalisés peuvent être ajoutés à cette couche. Ils auront des propriétés qui pourront être modifiées pour obtenir des effets différents selon l'objet.
+Voici quelques objets intégrés importants que chaque carte utilisera :
 
-* Player Entry Point - controls player spawn point
-* Terminal - launches an objective for the player to complete
-* Laser Barrier - blocks a player's progression until a specific objective is completed
-* Chests - Used to reward the player for completing an objective.
-* Exit - transports a player between maps, you'll at least need one to take your player back to the Fog Owl after they play your mission.
+* Player Entry Point - contrôle le point de départ des joueurs.
+* Terminal - lance un objectif à remplir par le joueur.
+* Laser Barrier (Barrière laser) : bloque la progression du joueur jusqu'à ce qu'un objectif spécifique soit atteint.
+* Chests (Coffres)  - utilisés pour récompenser le joueur qui a rempli un objectif.
+* Exit - transporte un joueur entre les cartes, vous en aurez au moins besoin d'une pour ramener votre joueur au Fog Owl après qu'il ait joué votre mission.

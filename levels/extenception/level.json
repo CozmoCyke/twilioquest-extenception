@@ -1,16 +1,16 @@
 {
   "title": "Extenception",
-  "description": "A TwilioQuest extension to help users create their first extension.",
+  "description": "Une extension TwilioQuest pour aider les utilisateurs à créer leur première extension.",
   "mission_icon": "mission_icon.png",
   "is_mission": true,
   "priority": 1,
   "backgroundMusic": "hackertheme_104771b",
   "backgroundEffect": {
-    "key": "starfeild",
+    "key": "starfield",
     "options": {}
   },
   "flavorTextOverrides": {
-    "bookshelf": "There's nothing like a good book."
+    "bookshelf": "Il n'y a rien de tel qu'un bon livre."
   },
   "objectives": ["getting_started", "creating_levels", "editing_maps", "editing_objectives"]
 }

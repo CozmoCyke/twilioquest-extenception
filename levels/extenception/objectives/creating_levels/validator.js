@@ -24,31 +24,31 @@ module.exports = async function (helper) {
 
   if (!answer1) {
     return helper.fail(`
-      Please enter the name of your level.
+    Veuillez saisir le nom de votre niveau.
     `);
   }
 
   try {
     var stats = fs.statSync(path.join(ext_folder, "levels", answer1));
-    if (!stats.isDirectory()) throw "Not a Directory";
+    if (!stats.isDirectory()) throw "Pas de dossier";
   } catch (e) {
     return helper.fail(`
-      The folder for the level was not found.
+    Le dossier pour le niveau n'a pas été trouvé.
     `);
   }
 
   try {
     var stats = fs.statSync(path.join(ext_folder, "levels", answer1, "level.json"));
-    if (!stats.isFile()) throw "Not a File";
+    if (!stats.isFile()) throw "Pas de fichier";
   } catch (e) {
     return helper.fail(`
-      \`level.json\` was not found inside the folder.
+    \`level.json\` n'a pas été trouvé dans le dossier.
     `);
   }
 
   helper.success(
     `
-      Hooray! You've created your first level!
+    Hourra ! Vous avez créé votre premier niveau !
     `,
     [{ name: "LEVEL_NAME", value: answer1 }]
   );

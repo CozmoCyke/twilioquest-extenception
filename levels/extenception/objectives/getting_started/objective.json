@@ -1,27 +1,27 @@
 {
-  "title": "Getting Started",
-  "description": "This will cover the first steps towards buidling your <strong>own</strong> TwilioQuest extension",
-  "validation_fields": [
+  " title " : "Démarrage",
+  "description" : "Ceci couvrira les premières étapes pour construire votre <strong>propre</strong> extension TwilioQuest",
+  "validation_fields" : [
     {
-      "name": "answer1",
-      "type": "text",
-      "placeholder": "<github_username>/<repository_name>",
-      "label": "Please provide your Github username and the repository name:"
+      " name " : "Réponse1",
+      "type" : "text",
+      "placeholder" : "<nom d'utilisateur de Github>/<nom_du_référentiel>",
+      "label" : "Veuillez indiquer votre nom d'utilisateur Github et le nom du dépôt :"
     },
     {
-      "name": "answer2",
-      "type": "text",
-      "placeholder": "/path/to/extensions/folder/<your_extension>",
-      "label": "Enter the path to your local repository"
+      " name " : "answer2",
+      "type" : "text",
+      "placeholder" : "/path/to/extensions/folder/<votre_extension>",
+      "label" : " Saisissez le chemin d'accès à votre répertoire local."
     },
     {
-      "name": "answer3",
-      "type": "text",
-      "placeholder": "type your answer here",
-      "label": "Where will you be able to access the levels you create inside TwilioQuest?"
+      " name " : "answer3",
+      "type" : "text",
+      "placeholder" : "tapez votre réponse ici",
+      "label" : "Où pourrez-vous accéder aux niveaux que vous créez dans TwilioQuest ?"
     }
   ],
-  "rewards": {
-    "xp": 100
+  " rewards " : {
+    "xp" : 100
   }
 }

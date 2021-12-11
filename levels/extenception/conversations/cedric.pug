@@ -9,42 +9,42 @@ conversation(display_name="Cedric")
       statement#colourful
       responses
         response#what_is_this_mission.
-          Can you tell me about the special mission?
+          Pouvez-vous me parler de cette mission spéciale ?
         response#im_excited.
-          I'm exited for this!
+          J'ai hâte d'y être !
         response#this_looks_fun.
-          This looks fun!
+          Ça a l'air amusant !
 
     when "what_is_this_mission"
       statement#mission
       responses
         response#why_is_this_so_random.
-          Why is this mission so colourful and seem random?
+          Pourquoi cette mission est-elle si colorée et semble-t-elle aléatoire ?
         response#im_exited.
-          I'm exited for this!
+          J'ai hâte d'y être !
         response#this_looks_fun.
-          This looks fun!
+          Cela a l'air amusant !
 
     default
         statement#default
         responses
           response#what_is_this_mission.
-            Hello, what is the special mission?
+            Bonjour, quelle est la mission spéciale ?
           response#why_is_this_so_random.
-            Why is this mission so colourful and seem random?
+            Pourquoi cette mission est-elle si colorée et semble-t-elle aléatoire ?
 
   statements
     statement#default
       text.
-        Welcome to this #[span.highlight special mission!]
+        Bienvenue à ce discours [span.highlight special mission !]
       speech.
-        Welcome to this #[break(strength="medium")] special mission!
-    statement#mission
-      text.
-        This is a special mission which will teach you how to create your own missions. You can help your friends learn new things by creating your own missions.
-    statement#colourful
-      text.
-        It was deliberately made so to show you some of the many amazing assets available in TwilioQuest you can use to create your missions.
-    statement#final
-      text.
-        All the best! Now get to learning and creating!
+        Bienvenue dans cette #[break(strength="medium")] mission spéciale !
+    déclaration#mission
+      texte.
+        Ceci est une mission spéciale qui vous apprendra à créer vos propres missions. Vous pouvez aider vos amis à apprendre de nouvelles choses en créant vos propres missions.
+    déclaration#colorée
+      texte.
+        Cette mission a été délibérément conçue pour vous montrer quelques-uns des nombreux atouts étonnants disponibles dans TwilioQuest que vous pouvez utiliser pour créer vos missions.
+    déclaration#finale
+      texte.
+        Bonne chance ! Maintenant, lance-toi dans l'apprentissage et la création !

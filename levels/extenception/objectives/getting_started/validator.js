@@ -25,7 +25,7 @@ module.exports = async function (helper) {
 
   if (!answer1) {
     return helper.fail(`
-      Please the your GitHub username and repository name.
+    Veuillez indiquer votre nom d'utilisateur GitHub et le nom du dépôt.
     `);
   }
 
@@ -40,30 +40,29 @@ module.exports = async function (helper) {
 
   } catch(e) {
     return helper.fail(`
-      The response provided to the first question is either an invalid
-      username or repository.
+    La réponse fournie à la première question est soit un nom d'utilisateur ou un dépot invalide.
   `);
   }
   
   if (!answer2) {
     return helper.fail(`
-      Please enter the answer to the second question.
+    Veuillez saisir la réponse à la deuxième question.
     `);
   }
 
   try {
     var stats = fs.statSync(path.join(answer2,"package.json"));
-    if (!stats.isFile()) throw "Not a file";
+    if (!stats.isFile()) throw "Pas de fichier";
   } catch (e) {
     return helper.fail(`
-      The second answer you provided was incorrect. The package.json
-      file was not found in that folder.
+    La deuxième réponse que vous avez fournie est incorrecte. Le fichier package.json
+    n'a pas été trouvé dans ce dossier.
     `);
   }
 
   if (!answer3) {
     return helper.fail(`
-      Please enter the answer to the third question.
+    Veuillez saisir la réponse à la troisième question.
     `);
   }
 
@@ -71,15 +70,15 @@ module.exports = async function (helper) {
     assert.strictEqual("VR Training Computer", answer3);
   } catch (e) {
     return helper.fail(`
-      The second answer you provided was incorrect. The correct answer
-      is "VR.....".
+    La deuxième réponse que vous avez fournie était incorrecte. La bonne réponse
+    est "VR.....".
     `);
   }
   // The way we usually write validators is to fail fast, and then if we reach
   // the end, we know the user got all the answers right!
   helper.success(
     `
-      Hooray! You did it! You can now start editing this extension!
+    Hourra ! Vous avez réussi ! Vous pouvez maintenant commencer à modifier cette extension !
     `,
     [{ name: "EXTENSION_FOLDER", value: answer2 }]
   );
