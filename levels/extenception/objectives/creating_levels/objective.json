@@ -1,9 +1,9 @@
 {
-  " title " : "Créer des niveaux",
+  "title" : "Créer des niveaux",
   "description" : "Cela va vous montrer comment créer un niveau dans votre extension. Une extension peut avoir plusieurs niveaux.",
   "validation_fields" : [
     {
-      " name " : "réponse1",
+      "name" : "answer1",
       "type" : "text",
       "placeholder" : "<nom_de_niveau>",
       "label" : " Saisissez le nom de votre niveau :"

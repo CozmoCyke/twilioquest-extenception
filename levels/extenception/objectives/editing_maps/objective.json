@@ -1,15 +1,15 @@
 {
-  " title " : "Modification des cartes",
+  " title" : "Modification des cartes",
   "description" : " Vous apprendrez à éditer des cartes pour TwilioQuest en utilisant Tiled ! ",
   "validation_fields" : [
     {
-      " name " : "réponse1",
+      "name" : "answer1",
       "type" : "text",
       "placeholder" : "/path/to/tiled",
       "label" : "Fournir le chemin d'accès où Tiled est installé"
     },
     {
-      " name " : "answer2",
+      "name" : "answer2",
       "type" : "text",
       "placeholder" : "tape ta réponse ici",
       "label" : "Quelle est la couche sur laquelle les lasers, le spawn des joueurs et les coffres sont placés dans Tiled ?"

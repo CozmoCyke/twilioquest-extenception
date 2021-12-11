@@ -1,27 +1,27 @@
 {
-  " title " : "Démarrage",
+  "title" : "Démarrage",
   "description" : "Ceci couvrira les premières étapes pour construire votre <strong>propre</strong> extension TwilioQuest",
   "validation_fields" : [
     {
-      " name " : "Réponse1",
+      "name" : "answer1",
       "type" : "text",
       "placeholder" : "<nom d'utilisateur de Github>/<nom_du_référentiel>",
       "label" : "Veuillez indiquer votre nom d'utilisateur Github et le nom du dépôt :"
     },
     {
-      " name " : "answer2",
+      "name" : "answer2",
       "type" : "text",
       "placeholder" : "/path/to/extensions/folder/<votre_extension>",
       "label" : " Saisissez le chemin d'accès à votre répertoire local."
     },
     {
-      " name " : "answer3",
+      "name" : "answer3",
       "type" : "text",
       "placeholder" : "tapez votre réponse ici",
       "label" : "Où pourrez-vous accéder aux niveaux que vous créez dans TwilioQuest ?"
     }
   ],
-  " rewards " : {
+  "rewards" : {
     "xp" : 100
   }
 }

@@ -3,13 +3,13 @@
   "description" : "Il s'agit de l'objectif final de cette mission. Vous apprendrez les bases de la façon dont vous pouvez créer et modifier les objectifs dans vos missions.",
   "validation_fields" : [
     {
-      " name " : "answer1",
+      "name" : "answer1",
       "type" : "text",
       "placeholder" : "tapez votre réponse ici",
       "label" : "Quel est le fichier qui contient le code de validation de l'objectif ?"
     },
     {
-      " name " : "answer2",
+      "name" : "answer2",
       "type" : "text",
       "placeholder" : "tapez votre réponse ici",
       "label" : "Twilio fournit un objet qui vous permet d'accéder et de définir des variables d'environnement, d'accéder à des réponses objectives, etc. Quel est son nom ?"
