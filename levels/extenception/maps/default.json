@@ -155,7 +155,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"example_objective2"
+                         "value":"editing_objectives"
                         }],
                  "rotation":0,
                  "type":"",
@@ -211,7 +211,7 @@
                  "y":488.666666666667
                 }, 
                 {
-                 "gid":10016,
+                 "gid":11019,
                  "height":32,
                  "id":115,
                  "name":"",
@@ -277,7 +277,7 @@
  "nextobjectid":116,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.5.0",
+ "tiledversion":"1.7.2",
  "tileheight":24,
  "tilesets":[
         {
@@ -298,15 +298,15 @@
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestObjects.json"
         }, 
         {
-         "firstgid":10014,
+         "firstgid":11017,
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
         }, 
         {
-         "firstgid":10015,
+         "firstgid":11018,
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }],
  "tilewidth":24,
  "type":"map",
- "version":1.5,
+ "version":"1.6",
  "width":32
 }
